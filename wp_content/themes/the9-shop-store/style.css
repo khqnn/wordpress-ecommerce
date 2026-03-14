@@ -1,0 +1,325 @@
+/*
+Theme Name: The9 Shop Store
+Author: aThemeArt
+Author URI: https://athemeart.com/
+Theme URI: https://athemeart.com/downloads/the9-shop-store/
+Description:The9 Shop Store – your new favorite child theme that turns any WordPress site into a gorgeous, fully-loaded eCommerce fashion store in minutes! This isn’t just another template… it’s a complete, shoppable powerhouse built for selling anything you love: boutique apparel, clothing & footwear, jewelry, watches, bags, beauty & skincare products, cosmetics, electronics, cameras, sports goods, furniture, children’s toys, handmade craft items, digital goodies like fonts, stock photos, software, music, even event tickets or affiliate links. If you can dream it, The9 can sell it! The layout is clean, modern, and crazy flexible – total control over the look and feel, visual design, branding, and user interface right from the familiar WordPress appearance settings. Tweak the design, shopping cart, product catalog, and product management without touching a line of code (though devs will love the clean Bootstrap framework underneath). One-click easy install, plays perfectly with Elementor, WPML, Yoast, Contact Form 7, MetaSlider, and all your favorite plugins. Download once and watch your website transform into a stunning online shop that feels custom-made. Ready to launch your dream store? Grab The9 today and start selling in style! 🚀 
+Template: the9-store
+Version: 1.0.3
+Requires at least: 5.0
+Tested up to: 7.0
+Requires PHP: 7.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: blog, e-commerce, three-columns, grid-layout, left-sidebar, right-sidebar, sticky-post, custom-background, custom-header, custom-colors, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, custom-logo, portfolio, footer-widgets
+Text Domain: the9-shop-store
+*/
+
+#navbar ul > li > a{
+  display: flex;
+  align-items: center;
+  
+}
+#navbar .top-form-minicart{
+	width: auto;
+	padding-right: 60px;
+}
+#navbar .top-form-minicart:before {
+   top: calc(50% - 14px);
+}
+#navbar .top-form-minicart:after {
+	 top: 50%;
+	 height: 20px;
+	 line-height: 0px;
+	
+}
+/*-------------------- cat-menu-wrap----------------*/
+@media only screen and (min-width: 991px) {
+    #navbar ul > li{
+        display: flex;
+        height: 100%;
+    }
+
+    #navbar ul ul.sub-menu{
+        top: 100%;
+    }
+    #navbar ul.sub-menu ul.sub-menu{
+        top: 0px;
+    }
+    #navbar .top-form-minicart a.cart-contents{
+        display: flex;
+        align-items: center;
+    }
+    #navbar .top-form-minicart .icofont-cart{
+        margin-right: 10px;
+    }
+}
+.cat-menu-wrap{
+    flex: 1!important;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.cat-menu-wrap button.btn-mega{
+    height: 100%;
+    display: flex;
+    align-items: center;   /* vertical center */
+    white-space: nowrap;   /* prevent text from wrapping */
+    overflow: hidden;      /* optional: hides overflow text */
+    text-overflow: ellipsis; /* optional: adds "..." if text is too long */
+    border-radius: 0px;
+    border: none;
+    position: relative;
+    overflow: visible;
+    min-width: 220px;
+    text-align: center;
+    justify-content: center;
+    font-size: 105%;
+    margin-top: 1px;
+    display: flex;
+    color: var(--nav-h-bg);
+    background: var(--nav-h-color);
+}
+.cat-menu-wrap button.btn-mega:hover, .cat-menu-wrap button.btn-mega:focus{
+    color: var(--nav-h-color);
+    background: var(--nav-h-bg);
+}
+.cat-menu-wrap button.btn-mega:before{
+    content: "";
+    position: absolute;
+    background:inherit;
+    left: 0px;
+    right: 0px;
+    top: -11px;
+    height: 11px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+#navbar .cat-menu-wrap ul.menu{
+    display: none;
+}
+#aside-nav-wrapper{
+    display: flex;
+}
+.cat-menu-wrap button.btn-mega span.bar{
+    position:relative;
+    height: 2px;
+    margin-right: 15px;
+    background-color: var(--nav-h-bg);
+    display: block;
+    width: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.cat-menu-wrap button.btn-mega span.bar:before,
+.cat-menu-wrap button.btn-mega span.bar:after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    height: 2px;
+    width: 27px;
+    top: -7px;
+    background-color:var(--nav-h-bg);
+    transition: all 0.3s ease-in-out;
+}
+.cat-menu-wrap button.btn-mega span.bar:after{
+    top: auto;
+    bottom: -7px;
+    width:27px;
+}
+.cat-menu-wrap button.btn-mega:hover span.bar:before,
+.cat-menu-wrap button.btn-mega:focus span.bar:before,
+.cat-menu-wrap button.btn-mega:hover span.bar:after,
+.cat-menu-wrap button.btn-mega:focus span.bar:after,
+.cat-menu-wrap button.btn-mega:hover span.bar,
+.cat-menu-wrap button.btn-mega:focus span.bar{
+    background: var(--nav-h-color);
+}
+@media only screen and (max-width: 850px) {
+    .cat-menu-wrap{
+        display: none!important;
+    }
+}
+#navbar ul.cat-menu-wrap ul.focus{
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+ul.products li.product:before {
+  border-bottom: 0px solid var(--secondary-color);
+  border-left: 0px solid var(--secondary-color);
+  width: 0%;
+  height: 0%;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  content: "";
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  pointer-events: none;
+  z-index: 9;
+}
+ul.products li.product:after {
+  border-top: 0px solid var(--secondary-color);
+  border-right: 0px solid var(--secondary-color);
+  width: 0%;
+  height: 0%;
+  top: 0px;
+  right: 0;
+  position: absolute;
+  content: "";
+  transition: all 0.3s ease-in-out;
+  z-index: 9;
+  pointer-events: none;
+}
+/*-------------------- Footer ----------------*/
+@media only screen and (max-width: 740px) {
+   #colophon .site_info .col-6{
+     width: 100%;
+   }
+}
+ul.products li.move.product {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ul.products li.move.product:hover,
+ul.products li.move.product:focus {
+    transform: translateY(-12px);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links{
+    display: block;
+    margin: 0px auto;
+}
+.pagination-custom ul {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+.pagination-custom li {
+    margin: 0;
+}
+.pagination-custom a,
+.pagination-custom span {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    line-height: 1;
+    font-size: 1rem;
+    font-weight: 400;
+    padding:15px 18px;
+    min-width: 1em;
+    display: block;
+    border: 1px solid var( --secondary-color );
+    background: var( --quaternary-color );
+    color: var( --secondary-color );
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.pagination-custom a:hover,
+.pagination-custom a:focus,
+.pagination-custom .current{
+    background: var( --secondary-color );
+    color: var( --quaternary-color );
+}
+.site-header-text-wrap h1{
+    font-size: 3rem;
+}
+/*---------------------------------
+    Preloader Styles
+-----------------------------------*/
+body.overlay--enabled {
+    overflow: hidden;
+}
+#the9_preloader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+/* Preloader background and animation container */
+#the9_preloader .preloader-animation {
+    background: #F2F3F5;
+}
+/* Center content using Flexbox */
+#the9_preloader .preloader-animation,
+#the9_preloader .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#the9_preloader .preloader-animation {
+    flex-direction: column; /* Spinner & text stacked vertically */
+}
+#the9_preloader .loader {
+    flex-direction: row; /* Loader sections side by side */
+}
+/* Loader sections for the sliding background effect */
+#the9_preloader .loader .loader-section {
+    padding: 0;
+    height: 100%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+#the9_preloader .loader .loader-section .bg {
+    background-color: #F2F3F5;
+    height: 100%;
+    width: 100%;
+    transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+/* Hide animation after load */
+#the9_preloader.loaded .animation-preloader {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+/* Collapse loader sections after load */
+#the9_preloader .loader.loaded .loader-section .bg {
+    width: 0;
+    transition: width 0.7s 0.3s cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+/* Spinner Styles */
+#the9_preloader .spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--secondary-color);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 15px;
+}
+/* Loading text animation */
+#the9_preloader .loading-text {
+    font-size: 18px;
+    color: #555;
+    animation: blink 1.5s infinite;
+}
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    #the9_preloader #the9_preloader-animation #the9_preloader-spinner {
+        height: 12rem;
+        width: 12rem;
+        margin: 0 auto 1.5rem auto;
+    }
+    #the9_preloader #the9_preloader-animation #the9_preloader-text {
+        font-size: 4rem;
+    }
+}
+/* Spinner rotation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Blink animation for text */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}

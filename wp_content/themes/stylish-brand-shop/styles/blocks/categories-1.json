@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Stripe",
+	"slug": "categories-1",
+	"blockTypes": [ "core/categories" ],
+	"styles": {
+		"css": "& > li { display: flex; justify-content: space-between; align-items: center; margin: 0; padding: var(--wp--preset--spacing--12) 0; border-bottom: 1px solid var(--wp--preset--color--secondary-100); } & > li:last-child { border-bottom: none; }"
+	}
+}

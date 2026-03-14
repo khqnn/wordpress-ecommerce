@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "title": "Lavender Mist",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        { "color": "#5D3A9B", "name": "Foreground", "slug": "foreground" },
+        { "color": "#8E44AD", "name": "Primary", "slug": "primary" },
+        { "color": "#A569BD", "name": "Secondary", "slug": "secondary" },
+        { "color": "#717171", "name": "Body Text", "slug": "body-text" },
+        { "color": "#F3E5F5", "name": "Secondary Background", "slug": "background-secondary" },
+        { "color": "#FFFFFF", "name": "Background", "slug": "background" },
+        { "color": "#8E44AD", "name": "Text Link", "slug": "text-link" },
+        { "color": "#F2F2F2", "name": "Border", "slug": "border" },
+        { "color": "#B39DDC", "name": "Tertiary", "slug": "tertiary" }
+      ],
+      "gradients": [
+        { "gradient": "linear-gradient(135deg, #5D3A9B 0%, #8E44AD 100%)", "name": "Primary Gradient", "slug": "primary-gradient" },
+        { "gradient": "linear-gradient(277deg, #EDE1F7 19%, #5D3A9B 100%)", "name": "Secondary Gradient", "slug": "secondary-gradient" }
+      ]
+    }
+  }
+}

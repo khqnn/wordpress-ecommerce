@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "title": "Coral Crush",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        { "color": "#FF5C57", "name": "Foreground", "slug": "foreground" },
+        { "color": "#FF3B30", "name": "Primary", "slug": "primary" },
+        { "color": "#FF7F50", "name": "Secondary", "slug": "secondary" },
+        { "color": "#717171", "name": "Body Text", "slug": "body-text" },
+        { "color": "#FFE5E0", "name": "Secondary Background", "slug": "background-secondary" },
+        { "color": "#FFFFFF", "name": "Background", "slug": "background" },
+        { "color": "#FF3B30", "name": "Text Link", "slug": "text-link" },
+        { "color": "#F2F2F2", "name": "Border", "slug": "border" },
+        { "color": "#FF8C69", "name": "Tertiary", "slug": "tertiary" }
+      ],
+      "gradients": [
+        { "gradient": "linear-gradient(135deg, #FF5C57 0%, #FF7F50 100%)", "name": "Primary Gradient", "slug": "primary-gradient" },
+        { "gradient": "linear-gradient(277deg, #FFD6D0 19%, #FF5C57 100%)", "name": "Secondary Gradient", "slug": "secondary-gradient" }
+      ]
+    }
+  }
+}

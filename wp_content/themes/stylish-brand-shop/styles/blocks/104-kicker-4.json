@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Kicker 4",
+	"slug": "text-kicker-4",
+	"blockTypes": [ "core/heading", "core/paragraph" ],
+	"styles": {
+		"border": {
+			"radius": "100px"
+		},
+		"color": {
+			"background": "var(--wp--preset--color--primary)",
+			"text": "var(--wp--preset--color--secondary-50)"
+		},
+		"spacing": {
+			"padding": {
+				"top": "10px",
+				"right": "15px",
+				"bottom": "10px",
+				"left": "15px"
+			}
+		},
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--tiny)",
+			"fontWeight": "400",
+			"fontStyle": "normal",
+			"lineHeight": "var(--wp--custom--global--line-height--petite)"
+		},
+		"css": "& { width: fit-content; }"
+	}
+}

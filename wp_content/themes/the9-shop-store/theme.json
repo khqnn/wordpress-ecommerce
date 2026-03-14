@@ -1,0 +1,196 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "custom": true,
+      "customDuotone": true,
+      "customGradient": true,
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "defaultDuotone": false,
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#000000",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#005EBD",
+          "name": "Secondary"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#ffffff",
+          "name": "White / Background"
+        },
+        {
+          "slug": "dark",
+          "color": "#111111",
+          "name": "Dark"
+        },
+        {
+          "slug": "light",
+          "color": "#f8f9fa",
+          "name": "Light Gray"
+        }
+      ],
+      "gradients": [],
+      "duotone": []
+    },
+    "layout": {
+      "contentSize": "1140px",
+      "wideSize": "1400px"
+    },
+    "spacing": {
+      "units": ["px", "em", "rem", "vh", "vw", "%"],
+      "blockGap": true,
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "customFontSize": true,
+      "dropCap": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+          "name": "System Font",
+          "slug": "system-font"
+        }
+      ],
+      "lineHeight": true
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "shadow": true,
+    "blocks": {
+      "core/button": {
+        "border": {
+          "radius": true
+        }
+      }
+    }
+  },
+  "styles": {
+    "css": "/* Custom child theme variables synced with Customizer */\n:root {\n  --wp--preset--color--primary: #000000;\n  --wp--preset--color--secondary: #005EBD;\n}",
+    "color": {
+      "background": "#ffffff",
+      "text": "#333333"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontSize": "2.5rem",
+          "fontWeight": "700"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "2rem"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "1.75rem"
+        }
+      },
+      "button": {
+        "border": {
+          "radius": "4px"
+        },
+        "typography": {
+          "fontWeight": "600"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--secondary)"
+        },
+        ":hover": {
+          "color": {
+            "text": "#00387a"
+          }
+        }
+      }
+    },
+    "typography": {
+      "fontSize": "1rem",
+      "lineHeight": "1.6",
+      "fontFamily": "var(--wp--preset--font-family--system-font)"
+    },
+    "spacing": {
+      "padding": {
+        "top": "0",
+        "bottom": "0",
+        "left": "1.5rem",
+        "right": "1.5rem"
+      }
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontSize": "2rem",
+          "fontWeight": "700"
+        }
+      },
+      "core/button": {
+        "color": {
+          "background": "var(--wp--preset--color--secondary)",
+          "text": "#ffffff"
+        },
+        ":hover": {
+          "color": {
+            "background": "#00387a"
+          }
+        }
+      },
+      "core/navigation": {
+        "typography": {
+          "fontWeight": "500"
+        }
+      },
+      "core/post-title": {
+        "typography": {
+          "fontSize": "2.5rem"
+        }
+      },
+      "core/heading": {
+        "typography": {
+          "fontWeight": "600"
+        }
+      },
+      "core/paragraph": {
+        "spacing": {
+          "margin": {
+            "bottom": "1.5em"
+          }
+        }
+      },
+      "core/quote": {
+        "border": {
+          "color": "var(--wp--preset--color--secondary)",
+          "width": "4px 0 0 0"
+        }
+      },
+      "core/separator": {
+        "color": {
+          "background": "var(--wp--preset--color--light)"
+        }
+      },
+      "core/table": {
+        "border": {
+          "collapse": true
+        }
+      }
+    }
+  },
+  "templateParts": [],
+  "customTemplates": [],
+  "title": "The9 Shop Store"
+}

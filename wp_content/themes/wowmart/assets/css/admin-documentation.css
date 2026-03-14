@@ -1,0 +1,520 @@
+/**
+ * WowMart Admin Documentation Styles
+ *
+ * @package WowMart
+ */
+
+/* Documentation Wrapper */
+.wowmart-documentation-wrap {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.wowmart-documentation-wrap h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #23282d;
+    font-weight: 600;
+}
+
+/* Upgrade Banner */
+.wowmart-upgrade-banner {
+    background: linear-gradient(135deg, #1137e0 0%, #2b0057 100%);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.wowmart-upgrade-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.wowmart-upgrade-banner::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.upgrade-banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.upgrade-banner-left h2 {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.upgrade-banner-left p {
+    font-size: 18px;
+    margin: 0;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.upgrade-button {
+    background: #ffffff !important;
+    color: #667eea !important;
+    border: none !important;
+    padding: 15px 40px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease !important;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.upgrade-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3) !important;
+    color: #764ba2 !important;
+}
+
+.upgrade-features {
+    position: relative;
+    z-index: 1;
+}
+
+.upgrade-features h3 {
+    font-size: 24px;
+    margin: 0 0 25px 0;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.feature-item p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Documentation Content */
+.wowmart-documentation-content {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Documentation Sections */
+.doc-section {
+    padding: 35px 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.doc-section:last-child {
+    border-bottom: none;
+}
+
+.doc-section-title {
+    font-size: 26px;
+    margin: 0 0 25px 0;
+    color: #667eea;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.doc-content {
+    color: #555;
+    line-height: 1.8;
+}
+
+.doc-content h3 {
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.doc-content h4 {
+    font-size: 18px;
+    margin: 20px 0 12px 0;
+    color: #444;
+    font-weight: 600;
+}
+
+.doc-content p {
+    margin: 0 0 15px 0;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.doc-content ul,
+.doc-content ol {
+    margin: 0 0 20px 0;
+    padding-left: 25px;
+}
+
+.doc-content li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.doc-content li strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.doc-content ol > li {
+    margin-bottom: 18px;
+}
+
+.doc-content ol > li > strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #667eea;
+    font-size: 16px;
+}
+
+.doc-content a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.doc-content a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Theme Info Box */
+.doc-info-box {
+    background: #f9f9f9;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+}
+
+.doc-info-box h3 {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+    color: #667eea;
+    font-weight: 600;
+}
+
+.theme-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.theme-info-table tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.theme-info-table tr:last-child {
+    border-bottom: none;
+}
+
+.theme-info-table td {
+    padding: 12px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.theme-info-table td:first-child {
+    width: 200px;
+    color: #333;
+}
+
+/* Code Blocks */
+.doc-content code {
+    background: #f5f5f5;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #d63384;
+}
+
+.doc-content pre {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 15px 0;
+    border-left: 4px solid #667eea;
+}
+
+.doc-content pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .wowmart-documentation-wrap {
+        padding: 15px;
+    }
+    
+    .wowmart-upgrade-banner {
+        padding: 30px 25px;
+    }
+    
+    .upgrade-banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .upgrade-banner-left h2 {
+        font-size: 26px;
+    }
+    
+    .upgrade-banner-left p {
+        font-size: 16px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wowmart-documentation-wrap h1 {
+        font-size: 26px;
+    }
+    
+    .wowmart-upgrade-banner {
+        padding: 25px 20px;
+    }
+    
+    .upgrade-banner-left h2 {
+        font-size: 22px;
+    }
+    
+    .upgrade-banner-left p {
+        font-size: 15px;
+    }
+    
+    .upgrade-button {
+        padding: 12px 30px !important;
+        font-size: 16px !important;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .doc-section {
+        padding: 25px 20px;
+    }
+    
+    .doc-section-title {
+        font-size: 22px;
+    }
+    
+    .doc-content h3 {
+        font-size: 18px;
+    }
+    
+    .doc-content h4 {
+        font-size: 16px;
+    }
+    
+    .theme-info-table td:first-child {
+        width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wowmart-documentation-wrap {
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .wowmart-upgrade-banner {
+        padding: 20px 15px;
+    }
+    
+    .upgrade-banner-left h2 {
+        font-size: 20px;
+    }
+    
+    .upgrade-features h3 {
+        font-size: 20px;
+    }
+    
+    .feature-item {
+        padding: 20px;
+    }
+    
+    .doc-section {
+        padding: 20px 15px;
+    }
+    
+    .doc-section-title {
+        font-size: 20px;
+    }
+    
+    .theme-info-table {
+        font-size: 14px;
+    }
+    
+    .theme-info-table td {
+        display: block;
+        padding: 8px 0;
+    }
+    
+    .theme-info-table td:first-child {
+        width: 100%;
+        padding-bottom: 4px;
+    }
+    
+    .theme-info-table tr {
+        padding: 12px 0;
+        display: block;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .wowmart-upgrade-banner {
+        display: none;
+    }
+    
+    .upgrade-button {
+        display: none;
+    }
+    
+    .doc-section {
+        page-break-inside: avoid;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .doc-section-title {
+        color: #000;
+    }
+    
+    .doc-content a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    .doc-content a:after {
+        content: " (" attr(href) ")";
+        font-size: 11px;
+        color: #666;
+    }
+}
+
+/* Accessibility Improvements */
+.upgrade-button:focus,
+.doc-content a:focus {
+    outline: 3px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.doc-section {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Notice Boxes */
+.doc-notice {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.doc-notice.success {
+    background: #d4edda;
+    border-left-color: #28a745;
+}
+
+.doc-notice.info {
+    background: #d1ecf1;
+    border-left-color: #17a2b8;
+}
+
+.doc-notice.warning {
+    background: #fff3cd;
+    border-left-color: #ffc107;
+}
+
+.doc-notice.error {
+    background: #f8d7da;
+    border-left-color: #dc3545;
+}

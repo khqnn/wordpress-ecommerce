@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Lead 3",
+	"slug": "text-lead-3",
+	"blockTypes": [
+		"core/heading",
+		"core/paragraph",
+		"core/post-title",
+		"core/site-title",
+		"core/site-tagline",
+		"core/query-title",
+		"designorbital-blocks/countup",
+		"designorbital-blocks/current-date",
+		"woocommerce/product-results-count",
+		"woocommerce/product-price",
+		"woocommerce/product-rating",
+		"woocommerce/product-summary",
+		"woocommerce/accordion-header",
+		"woocommerce/product-description",
+		"woocommerce/product-specifications"
+	],
+	"styles": {
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"lineHeight": "var(--wp--custom--global--line-height--large)"
+		}
+	}
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wpml-config>
+    <theme-info>
+        <theme-name>The9 Shop Store</theme-name>
+        <textdomain>the9-shop-store</textdomain>
+    </theme-info>
+
+    <!-- Customizer settings (Theme Options) -->
+    <customizer-settings>
+        <!-- Colors -->
+        <setting id="__primary_color" translate="1" />
+        <setting id="__secondary_color" translate="1" />
+
+        <!-- Footer -->
+        <setting id="copyright_text" translate="1" />
+
+        <!-- Social Links (Pro fields – only present in parent but used here) -->
+        <setting id="__fb_pro_link" translate="0" />   <!-- URL – no translation needed -->
+        <setting id="__tw_pro_link" translate="0" />
+        <setting id="__you_pro_link" translate="0" />
+
+        <!-- Any other customizer settings you add later can be listed here -->
+    </customizer-settings>
+
+    <!-- Theme Mods that are translatable strings -->
+    <theme-mods>
+        <mod name="copyright_text" translate="1" />
+    </theme-mods>
+
+    <!-- Admin Texts – for options saved via the parent theme's options framework -->
+    <!-- The parent theme "The9 Store" uses its own options framework (the9_store_get_option) -->
+    <!-- These are the keys used in the code -->
+    <admin-texts>
+        <key name="__fb_pro_link" />
+        <key name="__tw_pro_link" />
+        <key name="__you_pro_link" />
+        <key name="copyright_text" />
+        <!-- Add any additional options you create in the future here -->
+    </admin-texts>
+
+    <!-- Hard-coded translatable strings that WPML should scan -->
+    <!-- All strings wrapped in esc_html__(), __(), _e() etc. in functions.php are already in the .pot -->
+    <!-- No extra <gettext> entries needed unless you have strings not marked for translation -->
+
+    <!-- WooCommerce integration – make sure shop page titles etc. are translatable -->
+    <woocommerce>
+        <multilingual-store>
+            <enabled>1</enabled>
+        </multilingual-store>
+    </woocommerce>
+
+    <!-- Optional: Language configuration for specific fields (advanced) -->
+    <language-config>
+        <string-name name="Default Header Image" translate="1" />
+        <string-name name="ALL CATEGORIES" translate="1" />
+        <string-name name="Previous" translate="1" />
+        <string-name name="Next" translate="1" />
+        <string-name name="Search Results for: %s" translate="1" />
+        <string-name name="Oops! That page can’t be found." translate="1" />
+        <string-name name="Copyright © %1$s %2$s. All Rights Reserved." translate="1" />
+        <string-name name="The9 theme" translate="1" />
+        <string-name name="WordPress" translate="1" />
+        <string-name name="Loading, please wait…" translate="1" />
+    </language-config>
+</wpml-config>

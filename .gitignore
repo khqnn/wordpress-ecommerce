@@ -1,0 +1,3 @@
+db_data/
+.env.production
+.DS_Store

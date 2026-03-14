@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Light Mini",
+	"slug": "woo-catalog-sorting-4",
+	"blockTypes": [ "woocommerce/catalog-sorting" ],
+	"styles": {
+		"css": "& select { outline: none; background-color: var(--wp--preset--color--light); border: none; font-size: var(--wp--preset--font-size--minute) !important; padding: var(--wp--preset--spacing--8);"
+	}
+}
