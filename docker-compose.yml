@@ -56,7 +56,7 @@ services:
     environment:
       - MYSQL_CONTAINER=wordpress_db
       - S3_BACKUP_PATH=mysql-backups
-      - CLEANUP_AFTER=10m
+      - CLEANUP_AFTER=3d
       - DOCKER_API_VERSION=1.41
     env_file:
       - ./.env.production
@@ -67,8 +67,8 @@ services:
         cp /restore.sh /usr/local/bin/restore.sh &&
         cp /cleanup.sh /usr/local/bin/cleanup.sh &&
         chmod +x /usr/local/bin/backup.sh /usr/local/bin/restore.sh /usr/local/bin/cleanup.sh &&
-        echo '*/2 * * * * .  /usr/local/bin/backup.sh >> /proc/1/fd/1 2>&1' > /etc/crontabs/root &&
-        echo '*/5 * * * * .  /usr/local/bin/cleanup.sh >> /proc/1/fd/1 2>&1' >> /etc/crontabs/root &&
+        echo '0 2 * * * .  /usr/local/bin/backup.sh >> /proc/1/fd/1 2>&1' > /etc/crontabs/root &&
+        echo '0 3 * * * .  /usr/local/bin/cleanup.sh >> /proc/1/fd/1 2>&1' >> /etc/crontabs/root &&
         crond -f -l 2
       "
 
