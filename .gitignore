@@ -1,4 +1,5 @@
 db_data/
+wp_content/*
 .env.production
 .DS_Store
 wc-logs/*
