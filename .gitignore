@@ -3,3 +3,4 @@ wp_content/*
 .env.production
 .DS_Store
 wc-logs/*
+.env
