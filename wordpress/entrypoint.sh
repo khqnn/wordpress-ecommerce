@@ -3,13 +3,16 @@ set -e
 
 # Parse host and port from WORDPRESS_DB_HOST (e.g., db:3306)
 DB_HOST_PORT="$WORDPRESS_DB_HOST"
-if [[ "$DB_HOST_PORT" == *:* ]]; then
-    DB_HOST=$(echo "$DB_HOST_PORT" | cut -d: -f1)
-    DB_PORT=$(echo "$DB_HOST_PORT" | cut -d: -f2)
-else
-    DB_HOST="$DB_HOST_PORT"
-    DB_PORT=3306
-fi
+case "$DB_HOST_PORT" in
+    *:*)
+        DB_HOST="${DB_HOST_PORT%%:*}"
+        DB_PORT="${DB_HOST_PORT##*:}"
+        ;;
+    *)
+        DB_HOST="$DB_HOST_PORT"
+        DB_PORT=3306
+        ;;
+esac
 
 echo "Waiting for database to be ready at $DB_HOST:$DB_PORT..."
 
@@ -25,10 +28,9 @@ done
 
 echo "Database is ready."
 
-# Start a background process to update the site URL after WordPress is fully up
+# Background site URL update (unchanged)
 if [ -n "$WP_SITE_URL" ]; then
     (
-        # Give WordPress a moment to initialize (wp-config.php, tables, etc.)
         sleep 10
         echo "Attempting to update site URL to $WP_SITE_URL..."
         wp option update siteurl "$WP_SITE_URL" --allow-root --path=/var/www/html 2>/dev/null || true
@@ -37,5 +39,4 @@ if [ -n "$WP_SITE_URL" ]; then
     ) &
 fi
 
-# Execute the original WordPress entrypoint (starts Apache)
 exec docker-entrypoint.sh "$@"
