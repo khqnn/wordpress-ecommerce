@@ -1,0 +1,12 @@
+{
+    "name": "khaqan/s3-backup-uploader",
+    "description": "Upload backup to S3-compatible storage",
+    "type": "wordpress-plugin",
+    "require": {
+        "aws/aws-sdk-php": "^3.300"
+    },
+    "config": {
+        "vendor-dir": "vendor",
+        "autoloader-suffix": "S3BakcupUploader_v1"
+    }
+}
