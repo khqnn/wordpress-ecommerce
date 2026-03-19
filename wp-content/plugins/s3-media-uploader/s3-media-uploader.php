@@ -2,7 +2,7 @@
 /**
  * Plugin Name: S3 Media Uploader
  * Description: Offloads media uploads to an S3‑compatible bucket using environment variables.
- * Version: 1.0
+ * Version: 2.0
  * Author: Khaqan
  */
 
