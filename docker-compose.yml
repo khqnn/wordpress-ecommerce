@@ -28,7 +28,7 @@ services:
       # This is the fixed site URL – set it in your .env file
       WP_SITE_URL: ${WP_SITE_URL:-http://localhost:8080}
     volumes:
-      - ./wp_content:/var/www/html/wp-content
+      - ./wp-content:/var/www/html/wp-content
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     depends_on:
       - db

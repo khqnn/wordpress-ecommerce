@@ -1,6 +1,7 @@
 db_data/
 # wp_content/
-wp_content/updraft
+wp-content/updraft
+wp-content/backups/updraft
 .env.production
 .DS_Store
 wc-logs/*
