@@ -25,12 +25,6 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 
 /* CSS for featured categories */
 
-/* Featured categories section – no container styling, only spacing */
-.featured-categories {
-	width: 100%;
-	padding: 20px;          /* gives breathing room on the edges */
-	margin: 60px 0px;
-}
 
 /* Grid layout – flexbox with wrapping */
 .categories-grid {
@@ -45,13 +39,6 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 .category-item {
 	flex: 0 0 180px;          /* fixed width – adjust if needed */
 	text-align: center;
-}
-
-/* Optional link styling – remove if you don't need links */
-.category-link {
-	display: block;
-	text-decoration: none;
-	color: inherit;
 }
 
 /* Circular image container */
@@ -73,20 +60,9 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 	display: block;
 }
 
-/* Category name */
-.category-name {
-	display: block;
-	font-size: 16px;
-	font-weight: 500;
-}
 
 /* Mobile: stack vertically */
 @media (max-width: 768px) {
-	.featured-categories {
-		padding-left: 0px;
-		padding-right: 0px;
-		margin: 0px;
-	}
 	.categories-grid {
 		flex-direction: column;
 		align-items: center;
