@@ -1,5 +1,5 @@
 db_data/
-# wp_content/
+wp_content/
 wp-content/updraft
 wp-content/upgrade
 wp-content/backups/updraft
